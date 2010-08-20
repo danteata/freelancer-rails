@@ -1,21 +1,5 @@
-## MAC OS
-.DS_Store
-
-## TEXTMATE
-*.tmproj
-tmtags
-
-## EMACS
-*~
-\#*
-.\#*
-
-## VIM
-*.swp
-
-## PROJECT::GENERAL
-coverage
-rdoc
+.document
+Gemfile.lock
 pkg
-
-## PROJECT::SPECIFIC
+rdoc
+coverage

@@ -1,17 +1,52 @@
-= freelancer-rails
+= Freelancer Rails API
 
-Description goes here.
+Copyright (C) 2010 Trond Arve Nordheim - {Binary Marbles}[http://www.binarymarbles.com/]
+
+== NOTICE
+
+This is a project under heavy development. The API is far from stable yet, and
+the code is very unclean in some places. The API won't be considered stable
+until all the full Freelancer.com APIs is implemented and have tests verifying
+that they work like they should.
+
+== Description
+
+A Ruby gem for integrating the Freelancer.com API services into a Ruby on Rails application.
+
+== Features
+
+* oAuth authorization
+* Per-environment configuration and sandboxing support, and support from setting API configuration from environment variables.
+
+== Issues and missing features
+
+* No tests yet.
+* No elegant way of hooking into post-authorization-events to retrieve the access token and access secret for storing on the current users profile.
+* No generators available.
+* Lacks documentation.
+
+== Documentation
+
+* RDoc: http://rdoc.info/projects/tanordheim/freelancer-rails
+* Usage: http://wiki.github.com/tanordheim/freelancer-rails
+* Example app: 
+
+== Requirements
+
+* {freelancer}[http://rubygems.org/gems/freelancer]
+
+== Installation
+
+ $ gem install freelancer-rails
 
 == Note on Patches/Pull Requests
  
 * Fork the project.
 * Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
+* Add tests for it. This is important so I don't break it in a future version unintentionally.
+* Commit, do not mess with rakefile, version, or history. (if you want to have your own version, that is fine but bump version in a commit by itself I can ignore when I pull)
 * Send me a pull request. Bonus points for topic branches.
 
-== Copyright
+== License
 
 Copyright (c) 2010 Trond Arve Nordheim. See LICENSE for details.

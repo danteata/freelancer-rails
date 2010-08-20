@@ -1,0 +1,13 @@
+<h1>Freelancer.com authorization required</h1>
+
+<p>
+  The application needs to request authorization from Freelancer.com on your behalf to be able to make requests against the Freelancer.com API.
+</p>
+
+<p>
+  You will now be redirected to Freelancer.com and asked to authorize this application to access the site on your behalf.
+</p>
+
+<% form_tag freelancer_authorize_path do %>
+  <%= submit_tag "I understand, authorize this application" %>
+<% end %>
