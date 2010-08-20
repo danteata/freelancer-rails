@@ -1,4 +1,3 @@
 source "http://rubygems.org"
 
-gem "freelancer", :path => "/Volumes/Users/Trond/Code/Projects/FreelancerRubyAPI"
-
+gem "freelancer", "0.1.1"
