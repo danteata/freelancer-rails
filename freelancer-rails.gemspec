@@ -9,24 +9,29 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Trond Arve Nordheim"]
-  s.date = %q{2010-08-10}
+  s.date = %q{2010-08-21}
   s.description = %q{Ruby on Rails support for the Freelancer.com Ruby gem}
   s.email = %q{tanordheim@gmail.com}
   s.extra_rdoc_files = [
-    "LICENSE",
+    "Gemfile.lock",
+     "LICENSE",
      "README.rdoc",
      "VERSION"
   ]
   s.files = [
     "Gemfile",
+     "Gemfile.lock",
      "LICENSE",
      "README.rdoc",
      "Rakefile",
      "VERSION",
      "app/controllers/freelancer/rails/authorizations_controller.rb",
-     "app/controllers/test_controller.rb",
-     "config/routes.rb",
-     "lib/freelancer-rails.rb"
+     "app/views/freelancer/rails/authorizations/new.html.erb",
+     "lib/freelancer-rails.rb",
+     "lib/freelancer-rails/configuration.rb",
+     "lib/freelancer-rails/controllers/helpers.rb",
+     "lib/freelancer-rails/routes.rb",
+     "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/tanordheim/freelancer-rails}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -43,12 +48,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<freelancer>, [">= 0"])
+      s.add_runtime_dependency(%q<freelancer>, ["= 0.1.1"])
     else
-      s.add_dependency(%q<freelancer>, [">= 0"])
+      s.add_dependency(%q<freelancer>, ["= 0.1.1"])
     end
   else
-    s.add_dependency(%q<freelancer>, [">= 0"])
+    s.add_dependency(%q<freelancer>, ["= 0.1.1"])
   end
 end
 
